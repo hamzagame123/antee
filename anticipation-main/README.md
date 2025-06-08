@@ -84,6 +84,16 @@ mid.save('generated.mid')
 
 See the [Colab](https://colab.research.google.com/drive/1HCQDtGFwROpHRqcmZbV0byqbxDb74YGu?usp=sharing) notebook for additional examples of infilling control using the Anticipatory Music Transformer.
 
+## Interactive UI
+
+Launch a basic Streamlit interface to explore the generator:
+```bash
+streamlit run -m anticipation.ui
+```
+The app lets you load a pretrained model, provide a MIDI prompt, and download the generated continuation.
+It also displays a piano roll visualization of the output.
+
+
 ## Training an Anticipatory Music Transformer
 
 See the [train](train) directory for instructions on preprocessing the Lakh MIDI dataset and using [Levanter](https://github.com/stanford-crfm/levanter) to train an Anticipatory Music Transformer.
